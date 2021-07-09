@@ -1,0 +1,25 @@
+#! /bin/bash
+cd;
+ocn_username=$1
+samlFile=".samplesaml2aws";
+touch $samlFile; 
+
+echo "[default]
+app_id               =
+url                  = https://adfs.ottogroup.com
+username             = $ocn_username
+provider             = ADFS2
+mfa                  = Authenticator
+skip_verify          = false
+timeout              = 0
+aws_urn              = urn:amazon:webservices
+aws_session_duration = 3600
+aws_profile          = 
+resource_id          =
+subdomain            =
+role_arn             =
+region               =
+http_attempts_count  =
+http_retry_delay     =" > $samlFile
+
+echo "saml2aws config is done"

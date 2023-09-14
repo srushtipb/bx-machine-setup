@@ -1,20 +1,20 @@
 #! /bin/bash
 
-#brew install gopass
+brew install gopass
 
-#brew install jq
+brew install jq
 
-#brew install tfenv
+brew install tfenv
 
-#brew install awscli
+brew install awscli
 
-#brew install bash
+brew install bash
 
-#brew install localstack
+brew install localstack
 
-#brew install kubectl
+brew install kubectl
 
-#brew install aws-iam-authenticator
+brew install aws-iam-authenticator
 
 echo "___________________________________________________"
 echo -e "\ngopass version            $(gopass --version)"
